@@ -5,7 +5,7 @@ services:
   - docker
 
 before_install:
-  - docker bulid -t react2 -f Dockerfile.dev .
+  - docker build -t react2 -f Dockerfile.dev .
 script:
   - docker run -e CI=true react2 npm run testls
   
