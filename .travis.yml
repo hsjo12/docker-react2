@@ -7,5 +7,5 @@ services:
 before_install:
   - docker build -t react2 -f Dockerfile.dev .
 script:
-  - docker run -e CI=true react2 npm run testls
+  - docker run -e CI=true react2 npm run test
   
